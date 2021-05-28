@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addnewdesti">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Place Name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Place Address"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edlat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Place Latitude"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edlong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Place Longitude"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/edFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="167dp"
+            android:ems="10"
+            android:hint="Place Feedback"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/B_adddest"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:onClick="SAVE"
+                android:text="Add Destination" />
+
+            <Button
+                android:id="@+id/b_cancel"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="cancel"
+                android:text="CANCEL" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
